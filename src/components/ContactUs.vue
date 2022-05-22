@@ -9,12 +9,7 @@
             <v-row align="center" justify="center">
               <v-col class="text-center" cols="5">
                 GET IDEAS IN YOUR INBOX TO GROW YOUR BRAND
-                <v-text-field
-                  class="pt-4"
-                  outlined
-                  dark
-                  color="white"
-                />
+                <v-text-field class="pt-4" outlined dark color="white" />
               </v-col>
             </v-row>
           </v-card-title>
@@ -24,7 +19,8 @@
   </v-container>
 </template>
 <style scoped>
-.theme--light.v-input input, .theme--light.v-input textarea{
-    color: white !important ;
+.theme--light.v-input input,
+.theme--light.v-input textarea {
+  color: white !important ;
 }
 </style>

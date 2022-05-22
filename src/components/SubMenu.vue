@@ -5,12 +5,16 @@
       <span>{{ heading }}</span>
     </div>
     <v-row v-if="show" class="pt-5 pl-5">
-      <v-col v-for="(item, index) in subHeading" :key="index" >
+      <v-col v-for="(item, index) in subHeading" :key="index">
         <v-row>
-          <v-col >
-            <span  class="cursor-pointer" @click="goToRoute()">{{ item }}</span>
+          <v-col>
+            <span class="cursor-pointer" @click="goToRoute()">{{ item }}</span>
           </v-col>
-          <v-col v-if="index+1 !== subHeading.length" cols="6"  class=" text-center">       
+          <v-col
+            v-if="index + 1 !== subHeading.length"
+            cols="6"
+            class="text-center"
+          >
             <v-divider vertical />
           </v-col>
         </v-row>
@@ -35,11 +39,11 @@ export default {
       show: false,
     };
   },
-  methods:{
-    goToRoute(){
-     console.log("WIP")
-    }
-  }
+  methods: {
+    goToRoute() {
+      console.log("WIP");
+    },
+  },
 };
 </script>
 <style scoped>
